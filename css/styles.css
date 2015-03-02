@@ -9,21 +9,24 @@ body {
         background-size: cover;
 
       }
-ul#deck {
-
+ul #deck {
+        display: inline;
         color: black;
-        padding: 2em;
+        padding-top
+        padding-right: 20em;
+        padding-bottom:20em;
+        padding-left:20em;
         height: 20em;
         width: 60em;
         background-color: green;
         border-radius: 10px;
         opacity: .6;
-        margin: 10em;
-        margin-top: 5em;
+        margin: 40em;
+        margin-top: 40em;
 
 
       }
-li.card {
+li  {
         display: inline-block;
         width: 4em;
         text-align: center;

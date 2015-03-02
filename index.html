@@ -6,6 +6,58 @@
 </head>
 <body>
   <ul id="deck">
+    <li class="card"><img src="images/2spades.png " alt="2spades"/></li>
+    <li class="card"><img src="images/3spades.png " alt="3spades"/></li>
+    <li class="card"><img src="images/4spades.png " alt="4spades "/> </li>
+    <li class="card"><img src="images/5spades.png " alt="5spades "/> </li>
+    <li class="card"><img src="images/6spades.png " alt="6spades "/> </li>
+    <li class="card"><img src="images/7spades.png " alt="7spades "/> </li>
+    <li class="card"><img src="images/8spades.png" alt="8spades"</></li>
+    <li class="card"><img src="images/9spades.png" alt="9spades"</></li>
+    <li class="card"><img src="images/10spades.png" alt="9spades"</></li>
+    <li class="card"><img src="images/jokerspades.png" alt="jokerspades"</></li>
+    <li class="card"><img src="images/queenspades.png" alt="queenspades"</></li>
+    <li class="card"><img src="images/kingspades.png" alt="kingspades"</></li>
+    <li class="card"><img src="images/acespades.png" alt="acespades" </></li>
+    <li class="card"><img src="images/2diamonds.png" alt="2diamonds" </></li>
+    <li class="card"><img src="images/3diamonds.png" alt="3diamonds" </></li>
+    <li class="card"><img src="images/4diamonds.png" alt="4diamonds" </></li>
+    <li class="card"><img src="images/5diamonds.png" alt="5diamonds"</></li>
+    <li class="card"><img src="images/6diamonds.png" alt="6diamonds"</></li>
+    <li class="card"><img src="images/7diamonds.png" alt="7diamonds"</></li>
+    <li class="card"><img src="images/8diamonds.png" alt="8diamonds"</></li>
+    <li class="card"><img src="images/9diamonds.png" alt="9diamonds"</></li>
+    <li class="card"><img src="images/10diamonds.png" alt="10diamonds"</></li>
+    <li class="card"><img src="images/jokerdiamonds.png" alt="jokerdiamonds"</></li>
+    <li class="card"><img src="images/queendiamonds.png" alt="queendiamonds"</></li>
+    <li class="card"><img src="images/kingdiamonds.png" alt="kingdiamonds"</></li>
+    <li class="card"><img src="images/acediamonds.png" alt="acediamonds"</></li>
+    <li class="card"><img src="images/2clubs.png" alt="2clubs"</></li>
+    <li class="card"><img src="images/3clubs.png" alt="3clubs"</></li>
+    <li class="card"><img src="images/4clubs.png" alt="4clubs"</></li>
+    <li class="card"><img src="images/5clubs.png" alt="5clubs"</></li>
+    <li class="card"><img src="images/6clubs.png" alt="6clubs"</></li>
+    <li class="card"><img src="images/7clubs.png" alt="7clubs"</></li>
+    <li class="card"><img src="images/8clubs.png" alt="8clubs"</></li>
+    <li class="card"><img src="images/9clubs.png" alt="9clubs"</></li>
+    <li class="card"><img src="images/10clubs.png" alt="10clubs"</></li>
+    <li class="card"><img src="images/jokerclubs.png" alt="jokerclubs"</></li>
+    <li class="card"><img src="images/queenclubs.png" alt="queenclubs"</></li>
+    <li class="card"><img src="images/kingclubs.png" alt="kingclubs"</></li>
+    <li class="card"><img src="images/aceclubs.png" alt="aceclubs"</></li>
+    <li class="card"><img src="images/2hearts.png" alt="2hearts"</></li>
+    <li class="card"><img src="images/3hearts.png" alt="3hearts"</></li>
+    <li class="card"><img src="images/4hearts.png" alt="4hearts"</></li>
+    <li class="card"><img src="images/5hearts.png" alt="5hearts"</></li>
+    <li class="card"><img src="images/6hearts.png" alt="6hearts"</></li>
+    <li class="card"><img src="images/7hearts.png" alt="7hearts"</></li>
+    <li class="card"><img src="images/8hearts.png" alt="8hearts"</></li>
+    <li class="card"><img src="images/9hearts.png" alt="9hearts"</></li>
+    <li class="card"><img src="images/10hearts.png" alt="10hearts"</></li>
+    <li class="card"><img src="images/jokerhearts.png" alt="jokerhearts"</></li>
+    <li class="card"><img src="images/queenhearts.png" alt="queenhearts"</></li>
+    <li class="card"><img src="images/kinghearts.png" alt="kinghearts"</></li>
+    <li class="card"><img src="images/acehearts.png" alt="acehearts"</></li>
   </ul>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -15,7 +67,6 @@
       this.suit = s;
       this.toHTML = function() {
         return "<li class='card'>" + this.rank + "-" + this.suit + "</li>";
-      }
     }
 
     function Deck() {
@@ -45,13 +96,16 @@
 
       if(m) {
         setTimeout(shuffle, 125, m);
-       console.log(m);
-<!--console.log(rand);-->  //If I add a list with pics of cards this will randomize them
+
       }
     };
 
     var deck = new Deck();
     shuffle($('.cards').length);
+
+};
+
+
   </script>
 </body>
 </html>
