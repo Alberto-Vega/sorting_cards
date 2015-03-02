@@ -1,0 +1,30 @@
+body {
+        font-family: arial;
+        font-size: 20px;
+        background-color: green;
+        background-image: url("poker_table.jpg");
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+
+      }
+ul#deck {
+
+        color: black;
+        padding: 2em;
+        height: 20em;
+        width: 60em;
+        background-color: green;
+        border-radius: 10px;
+        opacity: .6;
+        margin: 10em;
+        margin-top: 5em;
+
+
+      }
+li.card {
+        display: inline-block;
+        width: 4em;
+        text-align: center;
+      }
