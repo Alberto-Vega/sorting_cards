@@ -15,3 +15,16 @@ function gameRuns() {
 
   shuffle($('.cards').length);
 };
+$(function()  {
+  $('button').on('mouseover', function()  {
+    $(this).animate({
+      opacity:0.5,
+      paddingBottom: '+=5'
+    },('fast'), function()  {
+      $(this).animate({
+        opacity:1.0,
+        paddingBottom: '-=5'},('fast'));
+
+      });
+    });
+  });
